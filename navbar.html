@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="navbar-collapse collapse w-100 dual-collapse2 order-1 order-md-0">
+      <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Game
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item <?php if($page=="game") { echo "active"; } ?>" href="index.php?content=game">Game</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item <?php if($page=="vooruitgang") { echo "active"; } ?>" href="index.php?content=vooruitgang">Vooruitgang</a>
+          </div>
+        </li>
+          <li class="nav-item">
+              <a class="nav-link <?php if($page=="BMI") { echo "active"; } ?>" href="index.php?content=bmi_cal">BMI</a>
+          </li>
+      </ul>
+  </div>
+  <div class="mx-auto my-2 order-0 order-md-1 position-relative">
+      <a class="mx-auto" href="index.php">
+          <img src="./img/logo.png" width="100" height="100">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+  </div>
+  <div class="navbar-collapse collapse w-100 dual-collapse2 order-2 order-md-2">
+      <ul class="navbar-nav mr-auto text-center">
+          <li class="nav-item">
+              <a class="nav-link <?php if($page=="contact") { echo "active"; } ?>" href="index.php?content=contact">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.php?content=v-home" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Account
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item <?php if($page=="login") { echo "active"; } ?>" href="index.php?content=login">Login</a>
+              <a class="dropdown-item" href="index.php?content=logout">Logout</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item <?php if($page=="registreren") { echo "active"; } ?>" href="index.php?content=registreren">Registreren</a>
+            </div>
+          </li>
+      </ul>
+  </div>
+</nav>
